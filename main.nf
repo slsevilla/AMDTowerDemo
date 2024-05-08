@@ -1,6 +1,4 @@
 #!/usr/bin/env nextflow
-import lib.WorkflowMain
-
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     amd/amdtowerdemo
