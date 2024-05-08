@@ -10,8 +10,6 @@ def summary_params = paramsSummaryMap(workflow)
 // Print parameter summary log to screen
 paramsSummaryLog(workflow)
 
-WorkflowAmdtowerdemo.initialise(params, log)
-
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     CONFIG FILES
