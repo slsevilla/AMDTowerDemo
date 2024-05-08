@@ -1,4 +1,6 @@
 #!/usr/bin/env nextflow
+import lib.WorkflowMain
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     amd/amdtowerdemo
@@ -26,10 +28,10 @@ include { validateParameters; paramsHelp } from 'plugin/nf-validation'
 //     System.exit(0)
 // }
 
-// // Validate input parameters
-// if (params.validate_params) {
-//     validateParameters()
-// }
+// Validate input parameters
+if (params.validate_params) {
+    validateParameters()
+}
 
 WorkflowMain.initialise(workflow, params, log, args)
 
