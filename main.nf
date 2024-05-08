@@ -31,7 +31,7 @@ include { validateParameters; paramsHelp } from 'plugin/nf-validation'
 //     validateParameters()
 // }
 
-WorkflowAmdtowerdemo.initialise(workflow, params, log, args)
+WorkflowMain.initialise(workflow, params, log, args)
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
