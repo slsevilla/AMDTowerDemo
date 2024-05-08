@@ -35,7 +35,7 @@ class RowChecker:
         first_col="fastq_1",
         second_col="fastq_2",
         single_col="single_end",
-        **kwargs,
+        **kwargs
     ):
         """
         Initialize the row checker with the expected column names.
