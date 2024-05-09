@@ -40,6 +40,7 @@ WorkflowMain.initialise(workflow, params, log, args)
 */
 
 include { AMDTOWERDEMO } from './workflows/amdtowerdemo'
+include { AMDTOWERDEMO_FAIL } from './workflows/amdtowerdemo_fail'
 
 //
 // WORKFLOW: Run main amd/amdtowerdemo analysis pipeline
@@ -48,22 +49,9 @@ workflow AMD_AMDTOWERDEMO {
     AMDTOWERDEMO ()
 }
 
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    RUN ALL WORKFLOWS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
 //
-// WORKFLOW: Execute a single named workflow for the pipeline
-// See: https://github.com/nf-core/rnaseq/issues/619
+// WORKFLOW: Run main amd/amdtowerdemo analysis pipeline with a known failure
 //
-workflow {
-    AMD_AMDTOWERDEMO ()
+workflow AMD_AMDTOWERDEMO_FAIL {
+    AMDTOWERDEMO_FAIL ()
 }
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    THE END
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
